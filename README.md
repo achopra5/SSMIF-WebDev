@@ -1,12 +1,12 @@
-# 📊 SSMIF-WebDev - Quant Development Challenge Submission
+# SSMIF-WebDev - Quant Development Challenge Submission
 
-## 🚀 Overview
+## Overview
 This project is part of the **SSMIF Quant Development Challenge (Spring 2025)**.  
 It is a **full-stack financial application** designed to:
-- Fetch historical stock data from **Yahoo Finance** 📈
-- Store & process financial data using **ClickHouse** 🏦
-- Provide **real-time portfolio performance insights** via a **React frontend** 🎨
-- Support **portfolio optimization & risk analysis** 📊
+- Fetch historical stock data from **Yahoo Finance** 
+- Store & process financial data using **ClickHouse**
+- Provide **real-time portfolio performance insights** via a **React frontend**
+- Support **portfolio optimization & risk analysis** 
 
 ---
 
