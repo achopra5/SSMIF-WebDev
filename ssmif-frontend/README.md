@@ -101,11 +101,16 @@ docker exec -it clickhouse-server clickhouse-client
 
 ---
 
-## **📜 Submission Guidelines**
-✅ **Ensure code is clean, structured, and follows best practices.**  
-✅ **README.md and CITATIONS.md are included in the submission.**  
-✅ **Ensure API and UI work correctly before submission.**  
-✅ **Submit final ZIP archive through the Google Form.**  
+CHATGPT citations
+
+print(f"✅ Optimized Portfolio Weights: {weights}")
+
+        return {"optimized_weights": weights}
+
+    except Exception as e:
+        print(f"❌ Optimization failed: {e}")
+        return {"error": str(e)}
+
 
 ---
 
