@@ -80,5 +80,16 @@ Plots Sharpe ratio & risk metrics
 Displays optimized portfolio allocations
 
 
-![image](https://github.com/user-attachments/assets/422ebab6-a1fc-4a2c-b247-74ba8c8e7cfb)
+![image](https://github.com/user-attachments/assets/830a41d6-c4b4-45b7-ac95-931fd74a24a9)
+![image](https://github.com/user-attachments/assets/0c834b0f-5524-4acb-af98-6451a13c0322)
+![image](https://github.com/user-attachments/assets/108e81c1-2811-46fd-b71b-55bfa6fa8c33
+![image](https://github.com/user-attachments/assets/e9b84384-e65a-4ef5-9dbd-ccf22f9b62e6
+![image](https://github.com/user-attachments/assets/10b3527c-7a94-47db-bad6-36d59a257c91
+![image](https://github.com/user-attachments/assets/2ddbd2b2-7784-4329-b2d8-3885d2cc794e)
+
+
+
+
+
+
 
