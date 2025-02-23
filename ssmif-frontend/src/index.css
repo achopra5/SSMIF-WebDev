@@ -1,0 +1,92 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+/* Global Variables */
+:root {
+  --bg-color: #f4f4f9;
+  --text-color: #333;
+  --primary-color: #007bff;
+  --card-bg: white;
+  --card-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  --table-border: #ddd;
+}
+
+/* Dark Mode Variables */
+.dark-mode {
+  --bg-color: #060606e9;
+  --text-color: #e0e0e0;
+  --primary-color: #1e90ff;
+  --card-bg: #1e1e1e;
+  --card-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  --table-border: #444;
+}
+
+/* Apply global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+/* Smooth dark mode toggle */
+body.dark-mode {
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Center content */
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Button Styles */
+button {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Primary Button */
+button.primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+button.primary:hover {
+  background: #0056b3;
+}
+
+/* Smooth Card Animations */
+.card {
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #root {
+    padding: 10px;
+  }
+}

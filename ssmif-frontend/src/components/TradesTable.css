@@ -1,0 +1,66 @@
+
+.search-input {
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.trades-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.trades-table th, .trades-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.trades-table th {
+  background: #f4f4f4;
+  cursor: pointer;
+}
+
+.trades-table th:hover {
+  background: #e0e0e0;
+}
+
+.trades-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.buy {
+  color: green;
+  font-weight: bold;
+}
+
+.sell {
+  color: red;
+  font-weight: bold;
+}
+
+/* Pagination Styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

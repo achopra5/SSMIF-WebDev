@@ -1,0 +1,157 @@
+:root {
+  --bg-color: #f4f4f9;
+  --text-color: #333;
+  --heading-color: #222;
+  --card-bg: white;
+  --card-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  --table-border: #ddd;
+}
+
+.dark-mode {
+  --bg-color: #060606e9;
+  --text-color: #ffffff;
+  --heading-color: #ffffff;
+  --card-bg: #1e1e1e;
+  --card-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  --table-border: #444;
+}
+
+h1, h2, h3 {
+  color: var(--heading-color) !important;
+  text-align: center;
+  font-size: 28px;
+  transition: color 0.3s ease-in-out;
+}
+
+.chart-large h1, .chart-large h2, .chart-large h3 {
+  color: var(--heading-color) !important;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.dashboard-container {
+  font-family: 'Inter', sans-serif;
+  padding: 20px;
+  background-color: var(--bg-color);
+}
+
+.section, .chart-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.table-container {
+  flex: 1;
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--table-border);
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Ensure table text is visible in dark mode */
+.dark-mode .table-container {
+  background: #1e1e1e; /* Darker background */
+  border: 1px solid var(--table-border);
+  color: var(--text-color); /* Light text */
+}
+
+/* Table Styling */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--table-border);
+}
+
+/* Dark Mode Table Header */
+.dark-mode .table-container th {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+/* Dark Mode Table Row Hover */
+.dark-mode .table-container tr:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.chart-card {
+  flex: 1;
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.chart-large {
+  margin-top: 30px;
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+}
+
+.kpi-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.kpi-card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+  text-align: center;
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  flex: 1 1 200px;
+}
+
+.toggle-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 16px;
+  font-size: 14px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.toggle-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section, .chart-row {
+    flex-direction: column;
+  }
+
+  .kpi-container {
+    flex-direction: column;
+  }
+
+  .kpi-card {
+    flex: 1 1 auto;
+  }
+}
